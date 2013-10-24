@@ -39,8 +39,8 @@ override_attributes(
     },
     'db' => {
       'database' => 'elasticmage',
-      'username' => 'elasticmage',
-      'password' => 'elasticmage'
+      'username' => 'root',
+      'password' => 'root'
     },
   }
 )
