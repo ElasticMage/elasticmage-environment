@@ -1,1 +1,3 @@
 /.bundle/
+/tools/chef/cookbooks/
+/tools/chef/tmp/
