@@ -82,4 +82,5 @@ DEPENDENCIES
   chef-magento (>= 0)
   chef-php-extra (>= 0)
   elasticsearch (>= 0)
+  mysql (>= 0)
 
