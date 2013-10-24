@@ -9,3 +9,6 @@ cookbook 'chef-magento',
 cookbook 'chef-php-extra',
    :git => 'https://github.com/inviqa/chef-php-extra'
 
+
+cookbook 'elasticsearch',
+    :git => 'https://github.com/elasticsearch/cookbook-elasticsearch'

@@ -3,6 +3,7 @@ SITE
   specs:
     apache2 (1.8.4)
     apt (2.3.0)
+    ark (0.4.0)
     aws (0.101.6)
     build-essential (1.4.2)
     chef_handler (1.1.4)
@@ -44,6 +45,14 @@ SITE
     yum (2.3.4)
 
 GIT
+  remote: https://github.com/elasticsearch/cookbook-elasticsearch
+  ref: master
+  sha: 711cd977e1b777880ed080e70e550354b668ddec
+  specs:
+    elasticsearch (0.3.4)
+      ark (>= 0.0.0)
+
+GIT
   remote: https://github.com/inviqa/chef-magento
   ref: master
   sha: 91cbcda3f243b771ce8fb3c6a84eb73a97be802b
@@ -72,4 +81,5 @@ GIT
 DEPENDENCIES
   chef-magento (>= 0)
   chef-php-extra (>= 0)
+  elasticsearch (>= 0)
 
