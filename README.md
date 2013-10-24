@@ -2,6 +2,10 @@
 = Prepare dev environment =
 
 bundle install --path=.bundle/gems/
-cd tools/vagrant
+pushd tools/chef
+bundle exec librarian-chef install
+popd
+pushd tools/vagrant
 bundle exec vagrant up
+popd
 
