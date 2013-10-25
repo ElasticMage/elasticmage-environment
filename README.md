@@ -9,3 +9,6 @@ pushd tools/vagrant
 bundle exec vagrant up
 popd
 
+add to your hosts:
+192.168.33.99 elasticmage.development.local
+

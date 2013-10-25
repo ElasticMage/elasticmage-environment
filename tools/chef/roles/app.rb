@@ -6,7 +6,9 @@ run_list(
     'apache2::mod_ssl',
     'chef-magento',
     'mysql::ruby',
+    'elasticmage',
     'chef-magento::install',
+    'simple_iptables',
 )
 
 
@@ -35,7 +37,7 @@ override_attributes(
     },
     'admin' => {
       'user' => 'admin',
-      'password' => 'admin123'
+      'password' => 'dev123123'
     },
     'db' => {
       'database' => 'elasticmage',

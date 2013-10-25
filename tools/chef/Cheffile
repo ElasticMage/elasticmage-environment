@@ -3,7 +3,8 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'mysql'
+cookbook 'simple_iptables',
+   :git => 'https://github.com/dcrosta/cookbook-simple-iptables.git'
 
 cookbook 'chef-magento',
    :git => 'https://github.com/inviqa/chef-magento'
