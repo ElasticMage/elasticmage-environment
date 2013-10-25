@@ -1,3 +1,6 @@
 /.bundle/
 /tools/chef/cookbooks/
 /tools/chef/tmp/
+/public/app/etc/local.xml
+/public/media/catalog/product/cache/
+/public/var/
