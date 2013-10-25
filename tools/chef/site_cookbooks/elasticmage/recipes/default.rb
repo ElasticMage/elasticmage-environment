@@ -21,3 +21,10 @@ bash "install sample DB" do
 EOH
     not_if "echo 'select NOW()' | /usr/bin/mysql -u root -p#{node['mysql']['server_root_password']} #{node['magento']['db']['database']}"
 end
+
+
+%w{vim strace}.each do |pkg|
+    package pkg do
+        action :install
+    end
+end

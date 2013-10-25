@@ -3,6 +3,8 @@
 
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'java'
+
 cookbook 'simple_iptables',
    :git => 'https://github.com/dcrosta/cookbook-simple-iptables.git'
 
@@ -11,7 +13,6 @@ cookbook 'chef-magento',
 
 cookbook 'chef-php-extra',
    :git => 'https://github.com/inviqa/chef-php-extra'
-
 
 cookbook 'elasticsearch',
     :git => 'https://github.com/elasticsearch/cookbook-elasticsearch'
