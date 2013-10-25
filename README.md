@@ -1,14 +1,17 @@
 
-= Prepare dev environment =
+# Prepare dev environment
 
-bundle install --path=.bundle/gems/
-pushd tools/chef
-bundle exec librarian-chef install
-popd
-pushd tools/vagrant
-bundle exec vagrant up
-popd
+## bash commands
 
-add to your hosts:
-192.168.33.99 elasticmage.development.local
+    bundle install --path=.bundle/gems/
+    pushd tools/chef
+    bundle exec librarian-chef install
+    popd
+    pushd tools/vagrant
+    bundle exec vagrant up
+    popd
+
+## /etc/hosts changes
+
+    192.168.33.99 elasticmage.development.local
 
