@@ -43,4 +43,5 @@ python2.7 http_stream/http_stream.py
 ```shell
 sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 sudo yum install apache-maven
+sudo ln -s /usr/share/apache-maven/bin/mvn /usr/bin/
 ```
