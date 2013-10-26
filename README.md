@@ -1,4 +1,3 @@
-
 # Prepare dev environment
 
 ## bash commands
@@ -35,4 +34,11 @@ python2.7 setup.py build
 sudo python-2.7 setup.py install
 cd /var/www/magento.development.local/elasticmage.repo/elasticsearch/river
 python2.7 http_stream/http_stream.py
+```
+
+# install maven
+
+```shell
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install apache-maven
 ```
