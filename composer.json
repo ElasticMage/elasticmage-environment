@@ -15,6 +15,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:svalaskevicius/BehatMage.git"
         }
     ],
     "require": {
@@ -22,7 +26,18 @@
         "magehack/elasticmage" : "dev-master"
     },
     "require-dev": {
-        "magetest/magento-phpspec-extension": "dev-develop"
+        "magetest/magento-phpspec-extension": "dev-develop",
+        "behat/behat":"*",
+        "behat/mink": "*",
+        "fabpot/goutte": "*@dev",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*",
+        "behat/mink-selenium-driver": "*",
+        "mockery/mockery": "dev-master@dev",
+        "magetest/magento-behat-extension": "dev-feature/refactor",
+        "sensiolabs/behat-page-object-extension": "*",
+        "bossa/phpspec2-expect": "dev-master"
     },
     "config": {
         "bin-dir": "bin"
