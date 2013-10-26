@@ -4,3 +4,4 @@
 /public/app/etc/local.xml
 /public/media/catalog/product/cache/
 /public/var/
+/tools/vagrant/.vagrant
