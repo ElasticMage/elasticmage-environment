@@ -1,0 +1,14 @@
+default:
+  extensions:
+    MageTest\MagentoExtension\Extension: ~
+    SensioLabs\Behat\PageObjectExtension\Extension:
+      namespaces:
+        page: features\bootstrap\Page
+    Behat\MinkExtension\Extension:
+      base_url: 'http://elasticmage.development.local/'
+      goutte: ~
+      selenium2:
+        wd_host: http://10.1.1.1:4444/wd/hub
+#   command to open the failing html pages:
+      show_cmd: echo '%s'
+
