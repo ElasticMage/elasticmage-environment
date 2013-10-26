@@ -5,3 +5,4 @@
 /public/media/catalog/product/cache/
 /public/var/
 /tools/vagrant/.vagrant
+/vendor/
