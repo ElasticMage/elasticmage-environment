@@ -1,7 +1,9 @@
 #!/bin/sh
 
 git pull origin master
-cd vendor/magehack/elasticmage/
+pushd vendor/magehack/elasticmage/
 git pull
 git submodule init
 git submodule update
+popd
+ln -sf ./vendor/magehack/elasticmage/spec/ ./spec
