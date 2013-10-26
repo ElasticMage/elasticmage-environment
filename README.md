@@ -17,10 +17,12 @@
 
 # Install MySQL replication plugin
 ## Setup MySQL to use replication (add to my.cnf [mysqld] section):
+```
 server_id           = 1
 log_bin             = /var/log/mysql/mysql-bin.log
 log_bin_index       = /var/log/mysql/mysql-bin.log.index
 binlog_format           = ROW
+```
 
 ## Upgrade python and install the MySQL plugin to the river
 ```shell
