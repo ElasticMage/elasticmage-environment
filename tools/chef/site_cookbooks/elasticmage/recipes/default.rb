@@ -23,7 +23,7 @@ EOH
 end
 
 
-%w{vim strace}.each do |pkg|
+%w{git vim strace}.each do |pkg|
     package pkg do
         action :install
     end
