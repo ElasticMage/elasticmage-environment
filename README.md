@@ -53,7 +53,7 @@ cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/
 mvn clean package
 sudo /usr/local/elasticsearch/bin/plugin -url file:./target/releases/elasticsearch-river-mysql-0.0.1-SNAPSHOT.zip -install mysql-river
 
-sudo /usr/local/elasticsearch/bin/plugin -install elasticsearch/elasticsearch-lang-javascript
+sudo /usr/local/elasticsearch/bin/plugin  -install elasticsearch/elasticsearch-lang-javascript/1.2.0
 ```
 
 # convenience tool
