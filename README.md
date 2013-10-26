@@ -52,4 +52,4 @@ sudo ln -s /usr/share/apache-maven/bin/mvn /usr/bin/
 cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/river
 mvn clean package
 sudo /usr/local/elasticsearch/bin/plugin -url file:./target/releases/elasticsearch-river-mysql-0.0.1-SNAPSHOT.zip -install mysql-river
- ```
+```
