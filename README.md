@@ -45,3 +45,10 @@ sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-mav
 sudo yum install apache-maven
 sudo ln -s /usr/share/apache-maven/bin/mvn /usr/bin/
 ```
+
+# compile and install elasticmage plugin
+```shell
+cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/river
+mvn clean package
+sudo /usr/local/elasticsearch/bin/plugin -url file:./target/releases/elasticsearch-river-mysql-0.0.1-SNAPSHOT.zip -install mysql-river
+ ```
