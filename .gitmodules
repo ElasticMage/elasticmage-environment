@@ -1,0 +1,3 @@
+[submodule "elasticmage.repo"]
+	path = elasticmage.repo
+	url = git@github.com:MageHack/elasticmage.git
