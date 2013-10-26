@@ -26,13 +26,15 @@ binlog_format           = ROW
 ## Upgrade python and install the MySQL plugin to the river
 ```shell
 sudo yum install python27-devel python27-setuptools
+sudo easy_install-2.7 pymysql
+sudo easy_install-2.7 cherrypy
+
 cd /home/vagrant/
 git clone git://github.com/noplay/python-mysql-replication.git
 cd python-mysql-replication/
-sudo easy_install-2.7 pymysql
-sudo easy_install-2.7 cherrypy
 python2.7 setup.py build
-sudo python-2.7 setup.py install
-cd /var/www/magento.development.local/elasticmage.repo/elasticsearch/river
+sudo python2.7 setup.py install
+
+cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/river/
 python2.7 http_stream/http_stream.py
 ```
