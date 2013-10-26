@@ -1,4 +1,3 @@
-
 # Prepare dev environment
 
 ## bash commands
@@ -18,10 +17,12 @@
 
 # Install MySQL replication plugin
 ## Setup MySQL to use replication (add to my.cnf [mysqld] section):
+```
 server_id           = 1
 log_bin             = /var/log/mysql/mysql-bin.log
 log_bin_index       = /var/log/mysql/mysql-bin.log.index
 binlog_format           = ROW
+```
 
 ## Upgrade python and install the MySQL plugin to the river
 ```shell
@@ -37,4 +38,28 @@ sudo python2.7 setup.py install
 
 cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/river/
 python2.7 http_stream/http_stream.py
+```
+
+# install maven
+
+```shell
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install apache-maven
+sudo ln -s /usr/share/apache-maven/bin/mvn /usr/bin/
+```
+
+# compile and install elasticmage plugin
+
+```shell
+cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/river
+mvn clean package
+sudo /usr/local/elasticsearch/bin/plugin -url file:./target/releases/elasticsearch-river-mysql-0.0.1-SNAPSHOT.zip -install mysql-river
+
+sudo /usr/local/elasticsearch/bin/plugin  -install elasticsearch/elasticsearch-lang-javascript/1.2.0
+```
+
+# convenience tool
+
+```shell
+sudo /usr/local/elasticsearch/bin/plugin -install mobz/elasticsearch-head
 ```
