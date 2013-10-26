@@ -3,9 +3,119 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4d31b39fd7f339d5848bbc3969881a33",
+    "hash": "ed9c881f41d5d9c821cb5c602275202d",
     "packages": [
-
+        {
+            "name": "magehack/elasticmage",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MageHack/elasticmage.git",
+                "reference": "8401626feaf4ef2d9d247fc7d76351d8565a7bdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MageHack/elasticmage/zipball/8401626feaf4ef2d9d247fc7d76351d8565a7bdb",
+                "reference": "8401626feaf4ef2d9d247fc7d76351d8565a7bdb",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Author Name",
+                    "email": "author@example.com"
+                }
+            ],
+            "description": "A short one line description of your module",
+            "support": {
+                "source": "https://github.com/MageHack/elasticmage/tree/master",
+                "issues": "https://github.com/MageHack/elasticmage/issues"
+            },
+            "time": "2013-10-26 12:09:52"
+        },
+        {
+            "name": "magento-hackathon/magento-composer-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magento-hackathon/magento-composer-installer.git",
+                "reference": "a58dd87e616990180529c02f1a8a7093b0f6d0fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magento-hackathon/magento-composer-installer/zipball/a58dd87e616990180529c02f1a8a7093b0f6d0fa",
+                "reference": "a58dd87e616990180529c02f1a8a7093b0f6d0fa",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "magento-hackathon/composer-command-integrator": "*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "composer-command-registry": [
+                    "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand"
+                ],
+                "class": "MagentoHackathon\\Composer\\Magento\\Installer"
+            },
+            "autoload": {
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Magento": "src/"
+                }
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Fahlke aka Flyingmana",
+                    "email": "daniel@digitalmanufaktur.com"
+                },
+                {
+                    "name": "Jörg Weller",
+                    "email": "weller@flagbit.de"
+                },
+                {
+                    "name": "Karl Spies",
+                    "email": "karl.spies@gmx.net"
+                },
+                {
+                    "name": "Tobias Vogt",
+                    "email": "tobi@webguys.de"
+                },
+                {
+                    "name": "David Fuhr",
+                    "email": "fuhr@flagbit.de"
+                },
+                {
+                    "name": "Vinai Kopp",
+                    "email": "vinai@netzarbeiter.com"
+                }
+            ],
+            "description": "Composer installer for Magento modules",
+            "homepage": "https://github.com/magento-hackathon/magento-composer-installer",
+            "keywords": [
+                "composer-installer",
+                "magento"
+            ],
+            "support": {
+                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/master",
+                "issues": "https://github.com/magento-hackathon/magento-composer-installer/issues"
+            },
+            "time": "2013-09-08 10:33:42"
+        }
     ],
     "packages-dev": [
         {
@@ -232,166 +342,6 @@
             "time": "2013-07-17 08:21:36"
         },
         {
-            "name": "behat/mink-browserkit-driver",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkBrowserKitDriver.git",
-                "reference": "c1b6d20b85280e19e774dc7e316225c61c833d7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkBrowserKitDriver/zipball/c1b6d20b85280e19e774dc7e316225c61c833d7d",
-                "reference": "c1b6d20b85280e19e774dc7e316225c61c833d7d",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink": "~1.5.0",
-                "php": ">=5.3.1",
-                "symfony/browser-kit": "~2.0",
-                "symfony/dom-crawler": "~2.0"
-            },
-            "require-dev": {
-                "silex/silex": "@dev"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Symfony2 BrowserKit driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "Mink",
-                "Symfony2",
-                "browser",
-                "testing"
-            ],
-            "time": "2013-07-17 08:22:56"
-        },
-        {
-            "name": "behat/mink-extension",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkExtension.git",
-                "reference": "6ed67ce283cd5ee882fefefd9358a670a13d404c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/6ed67ce283cd5ee882fefefd9358a670a13d404c",
-                "reference": "6ed67ce283cd5ee882fefefd9358a670a13d404c",
-                "shasum": ""
-            },
-            "require": {
-                "behat/behat": "~2.4.5",
-                "behat/mink": ">=1.4.3,<1.6-dev",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "behat/mink-goutte-driver": ">=1.0,<2.0"
-            },
-            "type": "behat-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\MinkExtension": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Mink extension for Behat",
-            "homepage": "http://mink.behat.org",
-            "keywords": [
-                "browser",
-                "gui",
-                "test",
-                "web"
-            ],
-            "time": "2013-06-04 17:35:37"
-        },
-        {
-            "name": "behat/mink-goutte-driver",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkGoutteDriver.git",
-                "reference": "v1.0.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkGoutteDriver/zipball/v1.0.9",
-                "reference": "v1.0.9",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink-browserkit-driver": ">=1.0.5,<1.2.0",
-                "fabpot/goutte": "~1.0.1",
-                "php": ">=5.3.1"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Goutte driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "browser",
-                "goutte",
-                "headless",
-                "testing"
-            ],
-            "time": "2013-07-03 18:43:54"
-        },
-        {
             "name": "behat/mink-selenium-driver",
             "version": "dev-master",
             "source": {
@@ -503,197 +453,6 @@
             "time": "2013-06-06 13:26:24"
         },
         {
-            "name": "bossa/phpspec2-expect",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/BossaConsulting/phpspec2-expect.git",
-                "reference": "8e1d964915b88f5b5e7996a592558fcd13d9c23d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/BossaConsulting/phpspec2-expect/zipball/8e1d964915b88f5b5e7996a592558fcd13d9c23d",
-                "reference": "8e1d964915b88f5b5e7996a592558fcd13d9c23d",
-                "shasum": ""
-            },
-            "require": {
-                "phpspec/phpspec": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "expect.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marcello Duarte",
-                    "homepage": "http://marcelloduarte.net/"
-                }
-            ],
-            "description": "Helper that decorates any SUS with a phpspec lazy object wrapper",
-            "keywords": [
-                "BDD",
-                "SpecBDD",
-                "TDD",
-                "spec",
-                "specification"
-            ],
-            "time": "2013-05-07 10:24:17"
-        },
-        {
-            "name": "fabpot/goutte",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabpot/Goutte.git",
-                "reference": "c9b42a7296a5f9aa2a1f7a15bb731c0de1d80786"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/c9b42a7296a5f9aa2a1f7a15bb731c0de1d80786",
-                "reference": "c9b42a7296a5f9aa2a1f7a15bb731c0de1d80786",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "guzzle/http": ">=3.0.5,<3.7-dev",
-                "php": ">=5.3.0",
-                "symfony/browser-kit": "~2.1",
-                "symfony/css-selector": "~2.1",
-                "symfony/dom-crawler": "~2.1",
-                "symfony/finder": "~2.1",
-                "symfony/process": "~2.1"
-            },
-            "require-dev": {
-                "guzzle/plugin-history": ">=3.0.5,<3.7-dev",
-                "guzzle/plugin-mock": ">=3.0.5,<3.7-dev"
-            },
-            "type": "application",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Goutte": "."
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "A simple PHP Web Scraper",
-            "homepage": "https://github.com/fabpot/Goutte",
-            "keywords": [
-                "scraper"
-            ],
-            "time": "2013-07-21 12:17:12"
-        },
-        {
-            "name": "guzzle/guzzle",
-            "version": "v3.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "v3.6.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/v3.6.0",
-                "reference": "v3.6.0",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.2",
-                "symfony/event-dispatcher": ">=2.1"
-            },
-            "replace": {
-                "guzzle/batch": "self.version",
-                "guzzle/cache": "self.version",
-                "guzzle/common": "self.version",
-                "guzzle/http": "self.version",
-                "guzzle/inflection": "self.version",
-                "guzzle/iterator": "self.version",
-                "guzzle/log": "self.version",
-                "guzzle/parser": "self.version",
-                "guzzle/plugin": "self.version",
-                "guzzle/plugin-async": "self.version",
-                "guzzle/plugin-backoff": "self.version",
-                "guzzle/plugin-cache": "self.version",
-                "guzzle/plugin-cookie": "self.version",
-                "guzzle/plugin-curlauth": "self.version",
-                "guzzle/plugin-error-response": "self.version",
-                "guzzle/plugin-history": "self.version",
-                "guzzle/plugin-log": "self.version",
-                "guzzle/plugin-md5": "self.version",
-                "guzzle/plugin-mock": "self.version",
-                "guzzle/plugin-oauth": "self.version",
-                "guzzle/service": "self.version",
-                "guzzle/stream": "self.version"
-            },
-            "require-dev": {
-                "doctrine/cache": "*",
-                "monolog/monolog": "1.*",
-                "phpunit/phpunit": "3.7.*",
-                "psr/log": "1.0.*",
-                "symfony/class-loader": "*",
-                "zendframework/zend-cache": "2.0.*",
-                "zendframework/zend-log": "2.0.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Tests": "tests/",
-                    "Guzzle": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Guzzle Community",
-                    "homepage": "https://github.com/guzzle/guzzle/contributors"
-                }
-            ],
-            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "rest",
-                "web service"
-            ],
-            "time": "2013-05-30 07:01:25"
-        },
-        {
             "name": "instaclick/php-webdriver",
             "version": "dev-master",
             "source": {
@@ -749,109 +508,21 @@
             "time": "2013-06-19 13:54:29"
         },
         {
-            "name": "magetest/magento-behat-extension",
-            "version": "dev-feature/refactor",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/svalaskevicius/BehatMage.git",
-                "reference": "1d5813f7f05ad9169f6e05de42b0dc1e752c5caa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/svalaskevicius/BehatMage/zipball/1d5813f7f05ad9169f6e05de42b0dc1e752c5caa",
-                "reference": "1d5813f7f05ad9169f6e05de42b0dc1e752c5caa",
-                "shasum": ""
-            },
-            "require": {
-                "behat/behat": "~2.4.4",
-                "behat/mink-browserkit-driver": "*",
-                "behat/mink-extension": "*",
-                "behat/mink-goutte-driver": ">=1.0.3",
-                "php": "~5.3",
-                "sensiolabs/behat-page-object-extension": "*"
-            },
-            "require-dev": {
-                "phpspec/phpspec2": "dev-develop"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "MageTest": "src/",
-                    "": [
-                        "vendor/magento/app",
-                        "vendor/magento/app/code/local",
-                        "vendor/magento/app/code/community",
-                        "vendor/magento/app/code/core",
-                        "vendor/magento/lib",
-                        "app",
-                        "app/code/local",
-                        "app/code/community",
-                        "app/code/core",
-                        "lib"
-                    ]
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alistair Stead",
-                    "email": "astead@sessiondigital.com"
-                },
-                {
-                    "name": "Marcello Duarte",
-                    "email": "mduarte@sessiondigital.com"
-                },
-                {
-                    "name": "Sarunas Valaskevicius",
-                    "email": "svalaskevicius@sessiondigital.com"
-                },
-                {
-                    "name": "Daniel Kidanemariam",
-                    "email": "dkidanemariam@sessiondigital.com"
-                },
-                {
-                    "name": "Mark Slocock",
-                    "email": "mark@gpmd.co.uk"
-                },
-                {
-                    "name": "Marco De Bortoli",
-                    "email": "marco.debortoli@sessiondigital.com"
-                },
-                {
-                    "name": "Other contributors",
-                    "homepage": "https://github.com/MageTest/BehatMage/contributors"
-                }
-            ],
-            "description": "Magento Behat extension",
-            "homepage": "https://github.com/MageTest/BehatMage",
-            "keywords": [
-                "bdd",
-                "behat",
-                "magento"
-            ],
-            "support": {
-                "source": "https://github.com/svalaskevicius/BehatMage/tree/feature/refactor"
-            },
-            "time": "2013-07-31 09:22:40"
-        },
-        {
             "name": "magetest/magento-phpspec-extension",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MageTest/MageSpec.git",
-                "reference": "a68a464b5ccbdec311cb49106618f2780c4a83b5"
+                "reference": "7b7c6659a6774e7b2054d93cc8745f2a354a68c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MageTest/MageSpec/zipball/a68a464b5ccbdec311cb49106618f2780c4a83b5",
-                "reference": "a68a464b5ccbdec311cb49106618f2780c4a83b5",
+                "url": "https://api.github.com/repos/MageTest/MageSpec/zipball/7b7c6659a6774e7b2054d93cc8745f2a354a68c9",
+                "reference": "7b7c6659a6774e7b2054d93cc8745f2a354a68c9",
                 "shasum": ""
             },
             "require": {
-                "phpspec/phpspec": "dev-master",
+                "phpspec/phpspec": "2.0.0-BETA4",
                 "symfony/config": "*",
                 "symfony/dependency-injection": "*"
             },
@@ -916,61 +587,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2013-06-26 19:41:06"
-        },
-        {
-            "name": "mockery/mockery",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
-                "reference": "437735be9c1760994c401f8752301f187b0954ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/437735be9c1760994c401f8752301f187b0954ba",
-                "reference": "437735be9c1760994c401f8752301f187b0954ba",
-                "shasum": ""
-            },
-            "require": {
-                "lib-pcre": ">=7.0",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "hamcrest/hamcrest": "1.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Mockery": "library/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Pádraic Brady",
-                    "email": "padraic.brady@gmail.com",
-                    "homepage": "http://blog.astrumfutura.com"
-                }
-            ],
-            "description": "Mockery is a simple yet flexible PHP mock object framework for use in unit testing with PHPUnit, PHPSpec or any other testing framework. Its core goal is to offer a test double framework with a succint API capable of clearly defining all possible object operations and interactions using a human readable Domain Specific Language (DSL). Designed as a drop in alternative to PHPUnit's phpunit-mock-objects library, Mockery is easy to integrate with PHPUnit and can operate alongside phpunit-mock-objects without the World ending.",
-            "homepage": "http://github.com/padraic/mockery",
-            "keywords": [
-                "BDD",
-                "TDD",
-                "library",
-                "mock",
-                "mock objects",
-                "mockery",
-                "stub",
-                "test",
-                "test double",
-                "testing"
-            ],
-            "time": "2013-07-24 12:43:00"
+            "time": "2013-10-15 14:25:26"
         },
         {
             "name": "phpspec/php-diff",
@@ -1007,16 +624,16 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "dev-master",
+            "version": "2.0.0-BETA4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MageTest/phpspec.git",
-                "reference": "28a70a372907326a2038a62003eec70f69c52d62"
+                "reference": "3bcf4e4ec83dc345d0fff7f22b0641a25403dcc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MageTest/phpspec/zipball/28a70a372907326a2038a62003eec70f69c52d62",
-                "reference": "28a70a372907326a2038a62003eec70f69c52d62",
+                "url": "https://api.github.com/repos/MageTest/phpspec/zipball/3bcf4e4ec83dc345d0fff7f22b0641a25403dcc9",
+                "reference": "3bcf4e4ec83dc345d0fff7f22b0641a25403dcc9",
                 "shasum": ""
             },
             "require": {
@@ -1027,9 +644,6 @@
                 "symfony/event-dispatcher": "~2.1",
                 "symfony/finder": "~2.1",
                 "symfony/yaml": "~2.1"
-            },
-            "suggest": {
-                "whatthejeff/nyancat-scoreboard": "~1.1 – Enables the Nyan Cat formatter"
             },
             "bin": [
                 "bin/phpspec"
@@ -1071,9 +685,9 @@
                 "tests"
             ],
             "support": {
-                "source": "https://github.com/MageTest/phpspec/tree/master"
+                "source": "https://github.com/MageTest/phpspec/tree/2.0.0-BETA4"
             },
-            "time": "2013-06-18 11:28:34"
+            "time": "2013-05-19 10:19:57"
         },
         {
             "name": "phpspec/prophecy",
@@ -1131,115 +745,6 @@
                 "source": "https://github.com/MageTest/prophecy/tree/master"
             },
             "time": "2013-06-18 11:29:11"
-        },
-        {
-            "name": "sensiolabs/behat-page-object-extension",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sensiolabs/BehatPageObjectExtension.git",
-                "reference": "6692ad7237597d1f7acfdacf1c7bbb138f56e3a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/BehatPageObjectExtension/zipball/6692ad7237597d1f7acfdacf1c7bbb138f56e3a9",
-                "reference": "6692ad7237597d1f7acfdacf1c7bbb138f56e3a9",
-                "shasum": ""
-            },
-            "require": {
-                "behat/behat": "~2.4",
-                "behat/mink-extension": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "dev-master"
-            },
-            "suggest": {
-                "bossa/phpspec2-expect": "Allows to use PHPSpec2 matchers in Behat context files"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "SensioLabs\\Behat\\PageObjectExtension\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marcello Duarte",
-                    "email": "mduarte@inviqa.com"
-                },
-                {
-                    "name": "Jakub Zalas",
-                    "email": "jzalas@sensiolabs.co.uk"
-                }
-            ],
-            "description": "Page object extension for Behat",
-            "homepage": "https://github.com/sensiolabs/BehatPageObjectExtension",
-            "keywords": [
-                "BDD",
-                "Behat",
-                "page"
-            ],
-            "time": "2013-05-24 08:09:10"
-        },
-        {
-            "name": "symfony/browser-kit",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/BrowserKit",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/BrowserKit.git",
-                "reference": "bfe3e86a1c024793b96bda9637438dbc997957a0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/bfe3e86a1c024793b96bda9637438dbc997957a0",
-                "reference": "bfe3e86a1c024793b96bda9637438dbc997957a0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/dom-crawler": "~2.0"
-            },
-            "require-dev": {
-                "symfony/css-selector": "~2.0",
-                "symfony/process": "~2.0"
-            },
-            "suggest": {
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\BrowserKit\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony BrowserKit Component",
-            "homepage": "http://symfony.com",
-            "time": "2013-07-21 20:19:01"
         },
         {
             "name": "symfony/config",
@@ -1651,53 +1156,6 @@
             "time": "2013-07-21 20:19:01"
         },
         {
-            "name": "symfony/process",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/Process",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Process.git",
-                "reference": "808d38aba6063f7e04d1592d923bbf3a007ef54d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/808d38aba6063f7e04d1592d923bbf3a007ef54d",
-                "reference": "808d38aba6063f7e04d1592d923bbf3a007ef54d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Process\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "http://symfony.com",
-            "time": "2013-07-21 20:19:01"
-        },
-        {
             "name": "symfony/translation",
             "version": "dev-master",
             "target-dir": "Symfony/Component/Translation",
@@ -1805,11 +1263,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "magetest/magento-phpspec-extension": 20,
-        "fabpot/goutte": 20,
-        "mockery/mockery": 20,
-        "magetest/magento-behat-extension": 20,
-        "bossa/phpspec2-expect": 20
+        "magehack/elasticmage": 20,
+        "magetest/magento-phpspec-extension": 20
     },
     "platform": {
         "php": ">=5.3.0"

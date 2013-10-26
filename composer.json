@@ -10,25 +10,19 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:svalaskevicius/BehatMage.git"
+            "url": "git@github.com:MageHack/elasticmage.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "magehack/elasticmage" : "dev-master"
     },
     "require-dev": {
-        "magetest/magento-phpspec-extension": "dev-develop",
-        "behat/behat":"*",
-        "behat/mink": "*",
-        "fabpot/goutte": "*@dev",
-        "behat/mink-extension": "*",
-        "behat/mink-goutte-driver": "*",
-        "behat/mink-selenium2-driver": "*",
-        "behat/mink-selenium-driver": "*",
-        "mockery/mockery": "dev-master@dev",
-        "magetest/magento-behat-extension": "dev-feature/refactor",
-        "sensiolabs/behat-page-object-extension": "*",
-        "bossa/phpspec2-expect": "dev-master"
+        "magetest/magento-phpspec-extension": "dev-develop"
     },
     "config": {
         "bin-dir": "bin"
@@ -46,5 +40,8 @@
             ],
             "Mage" : "public/app/code/core"
         }
+    },
+    "extra":{
+        "magento-root-dir": "public/"
     }
 }
