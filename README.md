@@ -47,6 +47,7 @@ sudo ln -s /usr/share/apache-maven/bin/mvn /usr/bin/
 ```
 
 # compile and install elasticmage plugin
+
 ```shell
 cd /var/www/magento.development.local/vendor/magehack/elasticmage/elasticsearch/river
 mvn clean package
